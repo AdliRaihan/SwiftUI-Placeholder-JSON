@@ -1,0 +1,6 @@
+/* Created by Adli Raihan on 29/07/22. */
+BTN_CONTINUE = "Continue";
+BODY_CONFIRMATION = "Are you sure?";
+BODY_USERNAME = "Username";
+BODY_ENTER_USERNAME = "Enter your username";
+BODY_USERNAME_ERROR = "Username cannot be blank";
