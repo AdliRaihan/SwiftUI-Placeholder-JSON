@@ -5,16 +5,15 @@ final class DashboardViewModel: ObservableObject {
     @Published var reset: Bool = false
 
     func logOut() {
-//        UDManager.username = nil
-//        NavigatorShared.activeInstance!.topStackView = .userLogin
         Network()
             .connect(
                 destination: .networkTest,
                 method: .get,
                 response: NetworkTestModel.self
             ) { result in
-            
-        }
+                UDManager.username = nil
+                NavigatorShared.activeInstance!.topStackView = .userLogin
+            }
     }
 }
 struct NetworkTestModel: Decodable {
