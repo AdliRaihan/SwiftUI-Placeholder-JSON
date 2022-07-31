@@ -40,10 +40,24 @@ struct DashboardView: SUIRouterProtocol {
         NavigationView {
             ScrollView {
                 VStack.init(alignment: .leading) {
+                    VStack {
+                        Text("Loaded Data")
+                            .textToLeft()
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        Text("\(self.$viewModel.postData.wrappedValue.count)")
+                            .font(.largeTitle.bold())
+                            .textToLeft()
+                    }
                     boxDashboardInfo
+                    ForEach.init(self.$viewModel.postData) {
+                        PostModelRow(title: $0.title, description: $0.body, id: $0.id)
+                    }
                 }.padding(.mSize)
-            }.navigationViewStyle(.stack)
-                .navigationBarHidden(true)
+            }
+            .themeable()
+            .navigationViewStyle(.stack)
+            .navigationBarHidden(true)
         }.onAppear {
             self.viewModel.getPosts()
         }

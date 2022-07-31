@@ -14,6 +14,7 @@
 		C21D3EAB289687920054D859 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EAA289687920054D859 /* NetworkProtocol.swift */; };
 		C21D3EAD289689DB0054D859 /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EAC289689DB0054D859 /* NetworkPath.swift */; };
 		C21D3EB1289693E50054D859 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EB0289693E50054D859 /* PostModel.swift */; };
+		C21D3EB42896A1740054D859 /* PostModelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EB32896A1740054D859 /* PostModelRow.swift */; };
 		C23882B5287EA6370053C345 /* SUI_By_AdliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23882B4287EA6370053C345 /* SUI_By_AdliApp.swift */; };
 		C23882B7287EA6370053C345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23882B6287EA6370053C345 /* ContentView.swift */; };
 		C23882B9287EA6400053C345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23882B8287EA6400053C345 /* Assets.xcassets */; };
@@ -63,6 +64,8 @@
 		C21D3EAA289687920054D859 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		C21D3EAC289689DB0054D859 /* NetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPath.swift; sourceTree = "<group>"; };
 		C21D3EB0289693E50054D859 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		C21D3EB32896A1740054D859 /* PostModelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModelRow.swift; sourceTree = "<group>"; };
+		C21D3EB52896A8210054D859 /* SUI-By-Adli-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SUI-By-Adli-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C23882B1287EA6370053C345 /* SUI By Adli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUI By Adli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23882B4287EA6370053C345 /* SUI_By_AdliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUI_By_AdliApp.swift; sourceTree = "<group>"; };
 		C23882B6287EA6370053C345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 		C23882B3287EA6370053C345 /* SUI By Adli */ = {
 			isa = PBXGroup;
 			children = (
+				C21D3EB52896A8210054D859 /* SUI-By-Adli-Info.plist */,
 				C23882E7287EB1650053C345 /* Configuration */,
 				C2C83DBC2892A074000AE6F2 /* Views */,
 				C23882E6287EB1520053C345 /* Common */,
@@ -214,6 +218,7 @@
 			children = (
 				C23882DF287EA67D0053C345 /* SUITextFieldView.swift */,
 				C2C83DC22892A695000AE6F2 /* SUIButtonView.swift */,
+				C21D3EB32896A1740054D859 /* PostModelRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				C2C83DC12892A092000AE6F2 /* LoginViewModel.swift in Sources */,
 				C23882B5287EA6370053C345 /* SUI_By_AdliApp.swift in Sources */,
 				C21D3EAB289687920054D859 /* NetworkProtocol.swift in Sources */,
+				C21D3EB42896A1740054D859 /* PostModelRow.swift in Sources */,
 				C2C83DC82892B3A4000AE6F2 /* UIApplication+Extension.swift in Sources */,
 				C21D3EA528967A930054D859 /* View+Extension.swift in Sources */,
 				C21D3EA12896676C0054D859 /* NavigatorShared.swift in Sources */,
@@ -639,6 +645,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SUI By Adli/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SUI-By-Adli-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -667,6 +674,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SUI By Adli/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SUI-By-Adli-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -12,6 +12,8 @@ struct SUITextFieldView: View {
 
     @Binding public var text: String
 
+    @State private var typedText: String = ""
+
     @Binding public var errorText: String?
 
     var body: some View {
@@ -24,8 +26,16 @@ struct SUITextFieldView: View {
             VStack {
                 TextField.init(
                     self.placeHolder,
-                    text: self.$text
-                )
+                    text: self.$typedText
+                ).onChange(of: self.typedText) { newValue in
+                    print(self.text)
+                    if self.typedText.count > 16,
+                       !newValue.isEmpty {
+                        self.typedText.removeLast()
+                    } else {
+                        self.text = typedText
+                    }
+                }
             }
             .padding(EdgeInsets(
                 top: .sSize,

@@ -49,6 +49,7 @@ struct LoginView: SUIRouterProtocol {
             }.onTapGesture {
                 UIApplication.shared.restoreKeyboard()
             }
+            .themeable()
             .navigationBarHidden(true)
         }
     }

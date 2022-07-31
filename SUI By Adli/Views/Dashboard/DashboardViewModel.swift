@@ -4,7 +4,7 @@ import SwiftUI
 
 final class DashboardViewModel: ObservableObject {
     @Published var reset: Bool = false
-    @Published var postData: [PostModel]?
+    @Published var postData: [PostModel] = []
 
     func getPosts() {
         Network.shared.connect(
@@ -15,6 +15,7 @@ final class DashboardViewModel: ObservableObject {
                 switch $0 {
                 case .success(let data):
                     self.postData = data
+                    print(self.postData)
                 case .failed:
                     print("ERROR!")
                 }

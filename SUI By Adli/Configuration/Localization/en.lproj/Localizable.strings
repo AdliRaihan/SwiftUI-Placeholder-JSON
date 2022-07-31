@@ -1,6 +1,11 @@
 /* Created by Adli Raihan on 29/07/22. */
+APP_DOMAIN_VERSION = "";
+
 BTN_CONTINUE = "Continue";
 BODY_CONFIRMATION = "Are you sure?";
 BODY_USERNAME = "Username";
 BODY_ENTER_USERNAME = "Enter your username";
 BODY_USERNAME_ERROR = "Username cannot be blank";
+
+USER_ROLE_TEST = "Application Tester";
+
