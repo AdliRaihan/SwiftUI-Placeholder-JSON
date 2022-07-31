@@ -2,7 +2,7 @@
 import Foundation
 enum NetworkCallback<T: Decodable> {
     case success(T)
-    case failed(T)
+    case failed(error: Error?)
 }
 
 enum NetworkMethod {
@@ -13,7 +13,7 @@ protocol NetworkProtocol {
     func connect<T: Decodable>(
         destination: NetworkPath,
         method: NetworkMethod,
-        response: T.Type,
+        expectedData: T.Type,
         callback: @escaping ((NetworkCallback<T>) -> Void)
     )
 }

@@ -44,6 +44,8 @@ struct DashboardView: SUIRouterProtocol {
                 }.padding(.mSize)
             }.navigationViewStyle(.stack)
                 .navigationBarHidden(true)
+        }.onAppear {
+            self.viewModel.getPosts()
         }
     }
 }

@@ -13,6 +13,7 @@
 		C21D3EA7289687680054D859 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EA6289687680054D859 /* Network.swift */; };
 		C21D3EAB289687920054D859 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EAA289687920054D859 /* NetworkProtocol.swift */; };
 		C21D3EAD289689DB0054D859 /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EAC289689DB0054D859 /* NetworkPath.swift */; };
+		C21D3EB1289693E50054D859 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D3EB0289693E50054D859 /* PostModel.swift */; };
 		C23882B5287EA6370053C345 /* SUI_By_AdliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23882B4287EA6370053C345 /* SUI_By_AdliApp.swift */; };
 		C23882B7287EA6370053C345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23882B6287EA6370053C345 /* ContentView.swift */; };
 		C23882B9287EA6400053C345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23882B8287EA6400053C345 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		C21D3EA6289687680054D859 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C21D3EAA289687920054D859 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		C21D3EAC289689DB0054D859 /* NetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPath.swift; sourceTree = "<group>"; };
+		C21D3EB0289693E50054D859 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		C23882B1287EA6370053C345 /* SUI By Adli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUI By Adli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23882B4287EA6370053C345 /* SUI_By_AdliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUI_By_AdliApp.swift; sourceTree = "<group>"; };
 		C23882B6287EA6370053C345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				C260739E2893B91600FFBB9A /* UDManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		C21D3EAF289693A10054D859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C21D3EB0289693E50054D859 /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C23882A8287EA6370053C345 = {
@@ -242,6 +252,7 @@
 		C23882E8287EB17D0053C345 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C21D3EAF289693A10054D859 /* Model */,
 				C21D3EA92896877C0054D859 /* Manager */,
 				C21D3EA8289687770054D859 /* Network */,
 			);
@@ -437,6 +448,7 @@
 				C26073962893A4FB00FFBB9A /* LocalizationManager.swift in Sources */,
 				C2C83DC62892AE2E000AE6F2 /* CGFloat+Extension.swift in Sources */,
 				C23882E3287EB0420053C345 /* BaseContentView.swift in Sources */,
+				C21D3EB1289693E50054D859 /* PostModel.swift in Sources */,
 				C2C83DBE2892A081000AE6F2 /* LoginView.swift in Sources */,
 				C2C83DBB28929868000AE6F2 /* NSObject+Extension.swift in Sources */,
 				C21D3EAD289689DB0054D859 /* NetworkPath.swift in Sources */,
